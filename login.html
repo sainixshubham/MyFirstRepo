@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+            margin: 0;
+            padding: 0;
+        }
+        
+    .container0 {
+            height: 100vh;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image:url(training.jpg); 
+            background-size: cover;
+        }
+    .box0 {
+            background-color: rgba(255, 255, 255, 0.1.5); 
+            padding: 30px;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.241);
+            backdrop-filter: blur(12px );
+            width: 300px;
+            box-shadow: 4px 4px 4px  rgba(0, 0, 0,.5);
+        }
+    .box0 form{
+            display : flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px; 
+            gap: 30px; 
+        }
+    .container0 h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    .inputFields{
+             color: white; 
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 100%; 
+            height: 40px;
+        }
+    input::placeholder{
+            color: white;
+        }
+    .inputgroup{
+            width: 100%;
+        }
+    button {
+            width: 100%;
+            height: 25px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+        }
+    .colm0{
+            display: flex;
+            justify-content:flex-start;
+        }
+        .colm0 .checkbox{
+            cursor: pointer;
+        }
+    .forgotpswd{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 0;
+            color: white;
+        }
+        .forgotpswd .pswd a{
+            color: white;
+            text-decoration: none;
+        }
+        .register-link{
+            margin: 22px 0;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <nav>
+            <div class="container" >
+             <div class="navlogo">
+             <div class="fit">
+                <h1>Fitness</h1>
+                </div>
+                <div class="colm" >
+                    <a class="links" href="/index.html">home</a>
+                    
+                    <a class="links" href="plans.html">Program</a>
+           
+                    <a class="links" href="#">Choose us</a>
+                
+                    <a class="links" href="#pricing">Pricing</a>
+
+                    <a class="links" href="/login.html">register now </a>
+
+                    <a class="menu" href="#"><i class='bx bx-menu'></i></a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+  <div class="container0">
+        <form class="box0">
+            <h2>Login</h2>
+
+            <div class="input">
+                <input class="inputFields" type="text" id="username" name="username" required placeholder="Username">  
+            </div>
+
+            <div class="input">
+                <input   class="inputFields" type="password" id="password" name="password" required placeholder="Password">
+            </div>
+            <div class="forgotpswd">
+            <div class="colm0">
+                <input class="checkbox" type="checkbox" id="remember me"> <p> remember me</p>
+        </div>
+        <div class="pswd">
+            <a href="forgot password">forgor password</a> 
+        </div>
+    </div>
+        <button style="border-radius: 10px; height: 35px;" type="submit">Login</button>
+            <p class="register-link">Don't have an account?   <a style=" color:white; text-decoration: none;" href="#">register</a></p>
+        </form>
+    </div>
+    <footer>
+        <div class="container7">
+          <div class="social">
+         <div class="media">
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-instagram' ></i>
+          <i class='bx bxl-facebook-circle'></i>
+          <i class='bx bx-mail-send'></i>
+         </div>  
+         <div class="copyryt">
+          <i class='bx bx-copyright' ></i><span><p>fitNess</p></span>
+         </div>
+      </div>
+  </div>
+  </footer> 
+</body>
+</html> 

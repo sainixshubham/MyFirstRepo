@@ -1,10 +1,540 @@
-h1{
-    color: blue;
-    border: 5px solid blue;
-    padding: 30px;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #49Be25;
+    font-family: "Poppins", sans-serif;
+    animation-name: fade;
+    animation-duration: 1s;
 }
-p{
-    color: red;
-    border: 5px solid red;
-    padding: 30px;
+* {
+    MARGIN:0;
+    padding: 0;
 }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    color: white;
+   
+}
+
+.navlogo {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+    padding: 0 15px;
+   justify-content: space-between;
+}
+
+.fit {
+    color: white;
+    font-size: 30px;
+}
+
+.colm {
+    display: flex;
+    gap: 60px;
+
+}
+
+.colm a {
+    color: rgba(255, 255, 255, 0.683);
+    text-decoration: none;
+}
+
+.colm a:hover {
+    color: rgb(0, 0, 0);
+}
+.menu{
+    display:none;
+}
+
+@media screen and (max-width:480px) {
+    .links{
+        display: none;
+    }
+    .menu{
+        display:block;
+        font-size: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+   .colm2{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center; 
+   }
+    .container2{
+        flex-direction: column;gap: 50px;
+    }
+    .row3{
+        flex-direction: column;
+    }
+    .container3 .pic1{
+        width: 100%;
+        transition: ALL ease-in-out .1S;
+    }
+    .row3 .pic1:hover{
+        scale:none;
+    }
+    .row4{
+        flex-direction: column;
+    }
+    .row5{
+        flex-direction: column;
+    }
+    .row5 .mem{
+        flex-direction: column;
+        gap:45px;
+    }
+    .row6{
+       flex-direction: column;  
+    } 
+    .social{
+        flex-direction: column;
+    }
+    .row10 .mem10{
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+    }
+    
+}
+
+
+
+.container1 {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.content {
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    margin-top: 45px;
+    text-align: left;
+}
+
+.btn {
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    padding: 4px;
+    margin-top: 3%;
+    margin-left: 14PX;
+    border-radius: 9px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgb(198, 194, 194);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,
+text {
+    text-align: center;
+    margin: 9px;
+    padding-left: 8px;
+    font-size: 42px;
+    color: white;
+}
+
+.para {
+    color: white;
+    text-align: center;
+}
+
+/* span {
+    display: inline-block;
+    margin-left: 20%;
+
+} */
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.icon {
+    text-align: center;
+    font-size: 55px;
+}
+
+.icon:hover {
+    color: #49Be25;
+}
+
+.featurehead {
+    font-size: 30px;
+    text-align: center;
+}
+
+.featurecontent {
+    text-align: center;
+}
+
+
+/* section 3 css start  */
+.container3 {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(73, 190, 37, 1) 0%, rgba(255, 255, 255, 1) 100%);
+padding: 50px 0;
+}
+
+.pic1 {
+    width: 300px;
+    aspect-ratio: 9/16;
+    transition: ALL ease-in-out .4S;
+    position: relative;
+}
+.pic1 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.pikcontent{
+
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: #49be2555;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.row3 {
+    display: flex;
+    height: 100%;
+    justify-content:center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+
+}
+
+.pic1:hover {
+    scale: 1.1;
+}
+.pic1:hover .pikcontent{
+    display: flex;
+
+}
+
+/* section 3 css End  */
+
+/* section 4 css start */
+.container4 {}
+
+.row4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.lady img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14%;
+    width: 14%;
+    display: inline-block;
+    margin-right: 1%;
+
+}
+
+.lady {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.logo img {
+    width: 14%;
+    height: 14%;
+    object-fit: scale-down; 
+}
+
+/* section 4 css end */
+
+
+
+/* section 5 css start */
+
+.row5 {
+    background-color: black;
+    padding: 0 0 100px 0;
+}
+
+.mem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.plan {
+    margin: 30px 10%;
+    max-width: 1200px;
+    color: antiquewhite;
+}
+
+.plan h2 {
+    font-size: 50px;
+}
+
+.colm5 {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    aspect-ratio: 3/4;
+    height: 300px;
+    padding-bottom: 10px;
+
+}
+
+.colm5 .mon {
+
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px 5px 0px 0px; */
+    background-color: rgb(190, 190, 190);
+    height: 20%;
+
+}
+
+.pn {
+height: 70%;
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+
+}
+
+.mon h4 {
+    margin: 10px;
+}
+
+.pn p {
+    font-weight: 600;
+}
+
+
+.btn2 input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(65, 87, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+}
+/* section 5 css end */
+
+
+/* section 6 css start */
+
+
+.colm6 {
+    color:white;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 45px 0;
+    font-size: 30px;
+    background-color: #49be2555;
+}
+.btn3 {
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    color: antiquewhite;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: black;
+    padding:10px;
+    text-decoration: none;
+}
+.btn3:hover {
+    
+    background-color: rgb(5, 157, 0);
+}
+/* section 6 css end */
+
+
+/* section 7 css start */
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+}
+.copyryt  {
+    display: flex;
+    align-items: center;
+    font-size: small;
+
+}
+/* section  css end */
+
+
+ /* plans.html css start */
+
+ .row10 {
+    background-color: black;
+    padding: 0 0 100px 0;
+}
+
+.mem10 {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto ;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    /* width: 100%; */
+}
+
+.plan10 {
+   padding-bottom: 30px;
+    max-width: 1200px;
+    color: antiquewhite;
+}
+
+.plan10 h2 {
+    font-size: 50px;
+}
+
+.colm10 {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    aspect-ratio: 3/4;
+    height: 300px;
+    padding-bottom: 10px;
+
+}
+
+.colm10 .mon10 {
+
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px 5px 0px 0px; */
+    background-color: rgb(190, 190, 190);
+    height: 20%;
+
+}
+
+.pn10 {
+height: 70%;
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+
+}
+
+.mon10 h4 {
+    margin: 10px;
+}
+
+.pn10 p {
+    font-weight: 600;
+}
+.btn10 input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(65, 87, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
